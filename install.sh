@@ -47,3 +47,4 @@ mkdir ~/.icons
 cp icons/* ~/.icons/
 tar -xf ~/.icons/*.tar.gz
 echo -e "${RED}ICONS THEME READY TO INSTALL${NC}"
+sudo pacman -S python-psutil

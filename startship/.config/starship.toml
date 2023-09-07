@@ -1,4 +1,4 @@
-scan_timeout = 60
+command_timeout = 1000
 add_newline = false
 
 [line_break]
@@ -46,3 +46,4 @@ format = "[$symbol($version )]($style)"
 [golang]
 format = "[$symbol($version )]($style)"
 symbol = " "
+

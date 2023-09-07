@@ -14,7 +14,7 @@ def separator():
     return widget.Sep(**base(), linewidth=0, padding=5)
 
 
-def icon(fg='text', bg='dark', fontsize=16, text="?"):
+def icon(fg='text', bg='dark', fontsize=18, text="?"):
     return widget.TextBox(
         **base(fg, bg),
         fontsize=fontsize,
@@ -38,7 +38,7 @@ def workspaces():
         widget.GroupBox(
             **base(fg='light'),
             font='JetBrains Mono Nerd Font Bold ',
-            fontsize=19,
+            fontsize=20,
             margin_y=3,
             margin_x=0,
             padding_y=8,
@@ -57,7 +57,7 @@ def workspaces():
             disable_drag=True
         ),
         separator(),
-        widget.WindowName(**base(fg='focus'), fontsize=14, padding=5),
+        widget.WindowName(**base(fg='focus'), fontsize=15, padding=5),
         separator(),
     ]
 
@@ -85,9 +85,21 @@ primary_widgets = [
 
     icon(bg="color3", text=' '),  # Icon: nf-fa-feed
     
-    widget.Net(**base(bg='color3'), interface='wlan0'),
+    widget.Net(**base(bg='color3'), interface='wlan0',use_bits=True),
 
-    powerline('color2', 'color3'),
+    powerline('color5', 'color3'),
+
+    icon(bg="color5", text=' '),  # Icon: nf-fa-feed
+
+    widget.CPU(format='{load_percent:5.2f} %',background=colors['color5'], foreground=colors['dark']),
+
+    powerline('color6', 'color5'),
+
+    icon(bg="color6", text=' '),  # Icon: nf-fa-feed
+    
+    widget.Memory(foreground = colors['dark'],background = colors['color6'],format = '{MemUsed:.0f} {mm} / {MemTotal:.0f} {mm}'),
+
+    powerline('color2', 'color6'),
 
     widget.CurrentLayoutIcon(**base(bg='color2'), scale=0.65),
 
@@ -95,13 +107,13 @@ primary_widgets = [
 
     powerline('color1', 'color2'),
 
-    icon(bg="color1", fontsize=17, text='󰃭'), # Icon: nf-mdi-calendar_clock
+    icon(bg="color1", fontsize=17, text='󰃭 '), # Icon: nf-mdi-calendar_clock
 
     widget.Clock(**base(bg='color1'), format='%d/%m/%Y - %H:%M:%S '),
 
     powerline('dark', 'color1'),
 
-    widget.Systray(background=colors['dark'], padding=5),
+    widget.Systray(background=colors['dark'], padding=5,base_size=30),
     
     separator(),
     
@@ -122,7 +134,9 @@ secondary_widgets = [
 
     powerline('color2', 'color1'),
 
-    widget.Clock(**base(bg='color2'), format='%d/%m/%Y - %H:%M%S '),
+    icon(bg="color2", fontsize=17, text='󰃭 '), # Icon: nf-mdi-calendar_clock
+
+    widget.Clock(**base(bg='color2'), format='%d/%m/%Y - %H:%M:%S '),
 
     powerline('dark', 'color2'),
 ]

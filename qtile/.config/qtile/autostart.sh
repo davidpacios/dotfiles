@@ -7,10 +7,13 @@ cbatticon -u 5 &
 volumeicon &
 
 # opacity
-picom &
+picom --no-vsync &
+
+# bg
+# feh --bg-fill ~/background.png
 
 # Overlay Bar
-#xob-pulse-py | xob -s pulse &
+~/.local/bin/xob-pulse-py | xob &
 #xob-brightness-js | xob -s brightness &
 
 # Apps

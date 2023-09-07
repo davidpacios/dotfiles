@@ -9,7 +9,7 @@ import subprocess
 
 
 def status_bar(widgets):
-    return bar.Bar(widgets, 24, opacity=0.92)
+    return bar.Bar(widgets, 28, opacity=0.9)
 
 
 screens = [Screen(top=status_bar(primary_widgets), wallpaper='~/background.jpg',
