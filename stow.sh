@@ -14,9 +14,7 @@ fi
 
 stow -v$var alacritty
 stow -v$var fish
-stow -v$var gtk-2.0
 stow -v$var gtk-4.0
-stow -v$var Pinta
 stow -v$var ranger
 stow -v$var startship
 stow -v$var wallpaper
