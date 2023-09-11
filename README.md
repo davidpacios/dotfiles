@@ -405,8 +405,8 @@ sudo cp fonts-themes-icons/fonts/* /usr/share/fonts/
 
 ```bash
 mkdir ~/.themes
-cp fonts-themes-icons/themes/* ~/.themes/
-tar -xf ~/.themes/*.tar.gz
+git clone https://github.com/vinceliuice/Graphite-gtk-theme ~/Descargas
+bash ~/Descargas/Graphite-gtk-theme/install.sh
 ```
 
 Para el tema del cursor:
@@ -419,8 +419,8 @@ yay breeze-snow-cursor-theme
 
 ```bash
 mkdir ~/Downloads
-git clone https://github.com/yeyushengfan258/We10X-icon-theme ~/Downloads
-bash ~/Downloads/We10X-icon-theme/install.sh -a
+git clone https://github.com/yeyushengfan258/We10X-icon-theme ~/Descargas
+bash ~/Descargas/We10X-icon-theme/install.sh -a
 ```
 
 
