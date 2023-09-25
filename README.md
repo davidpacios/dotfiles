@@ -98,7 +98,7 @@ sudo pacman -S python python-pip python-psutil
 | **mod + m**             | lanzar rofi                                  |
 | **mod + shift + m**     | navegación (rofi)                            |
 | **mod + s**             | scrot                                        |
-| **mod + shift + s**     | scrot manual                                 |
+| **mod + shift + s**     | scrot manual (necesita xclip)                |
 | **mod + r**             | redshift                                     |
 | **mod + shift + r**     | reset redshift                               |
 
