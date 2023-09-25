@@ -22,4 +22,6 @@ stow -v$var bat
 stow -v$var gtk-3.0
 stow -v$var qtile
 stow -v$var rofi
+stow -v$var htop
+stow -v$var xob
 
