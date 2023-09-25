@@ -16,10 +16,10 @@ nm-applet &
 picom --no-vsync &
 
 # Overlay Bar
-~/.local/bin/xob-pulse-py | xob &
-python ~/.local/bin/xob-brightness-js | xob &
+~/.local/bin/xob-pulse-py | xob -s pulse &
+python ~/.local/bin/xob-brightness-js | xob -s brightness &
 
 # Apps
 megasync &
-#discord &
+#discord & 
 udiskie -t &
