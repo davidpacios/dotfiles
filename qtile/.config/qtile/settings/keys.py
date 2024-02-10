@@ -69,6 +69,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # Screenshot
     ([mod], "s", lazy.spawn("scrot")),
+    ([mod, "shift"], "w", lazy.spawn("scrot -s")),
     ([mod, "shift"], "s", lazy.spawn("scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f /tmp/shot.png && xclip -selection clipboard -t image/png -i /tmp/shot.png'")),
 
     # Code
