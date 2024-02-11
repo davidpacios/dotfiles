@@ -12,6 +12,8 @@ vim.cmd([[ highlight NvimTreeIndentMarker guifg=#e9a8ad ]])
 vim.cmd([[ highlight NvimTreeFolderName guifg=#9653c9]])
 vim.cmd([[ highlight NvimTreeOpenedFolderName guifg=#8154bd ]])
 vim.cmd([[ highlight NvimTreeRootFolder guifg=#9653c9 ]])
+vim.cmd([[ highlight NvimTreeEmptyFolderName guifg=#9653c9 ]])
+vim.cmd([[ highlight NvimTreeSymlinkFolderName guifg=#9653c9 ]])
 
 -- -- configure nvim-tree
 nvimtree.setup({
