@@ -7,11 +7,13 @@ end
 -- recommended settings from nvim-tree documentation
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
 -- change color for arrows in tree to light blue
-vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
+vim.cmd([[ highlight NvimTreeIndentMarker guifg=#e9a8ad ]])
+vim.cmd([[ highlight NvimTreeFolderName guifg=#9653c9]])
+vim.cmd([[ highlight NvimTreeOpenedFolderName guifg=#8154bd ]])
+vim.cmd([[ highlight NvimTreeRootFolder guifg=#9653c9 ]])
 
--- configure nvim-tree
+-- -- configure nvim-tree
 nvimtree.setup({
 	-- change folder arrow icons
 	renderer = {
