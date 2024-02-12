@@ -8,12 +8,12 @@ end
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 -- change color for arrows in tree to light blue
-vim.cmd([[ highlight NvimTreeIndentMarker guifg=#e9a8ad ]])
-vim.cmd([[ highlight NvimTreeFolderName guifg=#9653c9]])
-vim.cmd([[ highlight NvimTreeOpenedFolderName guifg=#8154bd ]])
-vim.cmd([[ highlight NvimTreeRootFolder guifg=#9653c9 ]])
-vim.cmd([[ highlight NvimTreeEmptyFolderName guifg=#9653c9 ]])
-vim.cmd([[ highlight NvimTreeSymlinkFolderName guifg=#9653c9 ]])
+vim.cmd([[ highlight NvimTreeIndentMarker guifg=#e9a8ad ]]) --#e9a8ad #9653c9
+vim.cmd([[ highlight NvimTreeFolderName guifg=#e9a8ad]])
+vim.cmd([[ highlight NvimTreeOpenedFolderName guifg=#e9a8ad ]])
+vim.cmd([[ highlight NvimTreeRootFolder guifg=#e9a8ad ]])
+vim.cmd([[ highlight NvimTreeEmptyFolderName guifg=#e9a8ad ]])
+vim.cmd([[ highlight NvimTreeSymlinkFolderName guifg=#e9a8ad ]])
 
 -- -- configure nvim-tree
 nvimtree.setup({
@@ -22,8 +22,8 @@ nvimtree.setup({
 		icons = {
 			glyphs = {
 				folder = {
-					arrow_closed = " ", -- arrow when folder is closed
-					arrow_open = " ", -- arrow when folder is open
+					arrow_closed = " 󰁙 ", -- arrow when folder is closed
+					arrow_open = " 󰁊 ", -- arrow when folder is open
 				},
 			},
 		},

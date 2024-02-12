@@ -6,6 +6,6 @@ require("andromeda").setup({
 		mono_3 = "#464959", -- used for highlighting
 		mono_4 = "#e9a8ad",
 		mono_5 = "#9ea1a6", -- comments
-		mono_6 = "#e9a8ad", -- normal text,
+		mono_6 = "#daedf1", --"#e9a8ad", -- normal text,
 	},
 })
