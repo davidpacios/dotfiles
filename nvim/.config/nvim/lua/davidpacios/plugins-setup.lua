@@ -45,6 +45,9 @@ return packer.startup(function(use)
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 
+	--transparent
+	use("xiyaowong/transparent.nvim")
+
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
