@@ -13,11 +13,13 @@ volumeicon &
 nm-applet &
 
 # opacity
-picom --no-vsync &
+#picom --no-vsync &
+unagi &
+
 
 # Overlay Bar
-~/.local/bin/xob-pulse-py | xob -s pulse &
-python ~/.local/bin/xob-brightness-js | xob -s brightness &
+#~/.local/bin/xob-pulse-py | xob -s pulse &
+#python ~/.local/bin/xob-brightness-js | xob -s brightness &
 
 # Apps
 megasync &
